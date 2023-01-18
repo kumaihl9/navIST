@@ -9,8 +9,14 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blue[700],
-      width: double.infinity,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.only(
+            bottomLeft: Radius.circular(20),
+            bottomRight: Radius.circular(20)),
+        gradient: LinearGradient(
+        colors: [Colors.indigo, Colors.indigo],
+      ),
+      ),
       height: 200,
       padding: EdgeInsets.only(top: 20.0),
       child: Column(
@@ -21,14 +27,11 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
             height: 70,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              image: DecorationImage(
-                image: AssetImage('assets/images/profile.jpg'),
-              ),
             ),
           ),
           Text(
             "navIST",
-            style: TextStyle(color: Colors.white, fontSize: 20),
+            style: TextStyle(color: Colors.white, fontSize: 30,fontWeight: FontWeight.bold),
           ),
           Text(
             "@navIST.edu.pk",

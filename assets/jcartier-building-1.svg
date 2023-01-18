@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg7594"
+    sodipodi:docname="hw_building_0.svg"
+    viewBox="0 0 24 38"
+    sodipodi:version="0.32"
+    version="1.0"
+    inkscape:output_extension="org.inkscape.output.svg.inkscape"
+    inkscape:version="0.46"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      inkscape:window-y="62"
+      pagecolor="#ffffff"
+      inkscape:window-height="848"
+      inkscape:zoom="17.157895"
+      inkscape:window-x="163"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="12"
+      inkscape:cy="19"
+      showguides="true"
+      inkscape:guide-bbox="true"
+      inkscape:window-width="1360"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Calque 1"
+      inkscape:groupmode="layer"
+    >
+    <g
+        id="g10275"
+      >
+      <path
+          id="path9192"
+          style="fill-rule:evenodd;fill:#888888"
+          d="m2 31.5l10 5v-25l-10-5v25z"
+      />
+      <path
+          id="path9194"
+          style="fill-rule:evenodd;fill:#888888"
+          d="m12 36.5l10-5v-25l-10 5v25z"
+      />
+      <path
+          id="path9196"
+          style="fill-rule:evenodd;fill:#ffffff"
+          d="m2 6.5l10-5 10 5-10 5-10-5z"
+      />
+      <path
+          id="path9198"
+          sodipodi:nodetypes="ccccc"
+          style="fill-rule:evenodd;fill:#888888"
+          d="m6 6.5l6-3 6 3-6 3-6-3z"
+      />
+      <path
+          id="path9200"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m12 0.9375l-0.219 0.125-9.9998 5-0.2812 0.125v0.3125 25 0.312l0.2812 0.126 9.9998 5 0.219 0.124 0.219-0.124 10-5 0.281-0.126v-0.312-25-0.3125l-0.281-0.125-10-5-0.219-0.125zm0 1.125l9.5 4.75v24.376l-9.5 4.75-9.5-4.75v-24.376l9.5-4.7495z"
+      />
+      <path
+          id="path9202"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m5 28.188v0.812 4 0.312l0.2812 0.126 4 2 0.7188 0.374v-0.812-4-0.312l-0.2812-0.126-4-2-0.7188-0.374zm1 1.624l3 1.5v2.876l-3-1.5v-2.876z"
+      />
+      <path
+          id="path9204"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m15.5 23.688l-0.719 0.374-2 1-0.281 0.126v0.312 3 0.812l0.719-0.374 2-1 0.281-0.126v-0.312-3-0.812zm-1 1.624v1.876l-1 0.5v-1.876l1-0.5z"
+      />
+      <path
+          id="path9206"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m15.5 17.688l-0.719 0.374-2 1-0.281 0.126v0.312 3 0.812l0.719-0.374 2-1 0.281-0.126v-0.312-3-0.812zm-1 1.624v1.876l-1 0.5v-1.876l1-0.5z"
+      />
+      <path
+          id="path9208"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m15.5 11.688l-0.719 0.374-2 1-0.281 0.126v0.312 3 0.812l0.719-0.374 2-1 0.281-0.126v-0.312-3-0.812zm-1 1.624v1.876l-1 0.5v-1.876l1-0.5z"
+      />
+      <path
+          id="path9210"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m20.5 21.188l-0.719 0.374-2 1-0.281 0.126v0.312 3 0.812l0.719-0.374 2-1 0.281-0.126v-0.312-3-0.812zm-1 1.624v1.876l-1 0.5v-1.876l1-0.5z"
+      />
+      <path
+          id="path9212"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m20.5 15.188l-0.719 0.374-2 1-0.281 0.126v0.312 3 0.812l0.719-0.374 2-1 0.281-0.126v-0.312-3-0.812zm-1 1.624v1.876l-1 0.5v-1.876l1-0.5z"
+      />
+      <path
+          id="path9214"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m20.5 9.1875l-0.719 0.375-2 0.9995-0.281 0.126v0.312 3 0.812l0.719-0.374 2-1 0.281-0.126v-0.312-3-0.8125zm-1 1.6245v1.876l-1 0.5v-1.876l1-0.5z"
+      />
+      <path
+          id="path9216"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m8.5 23.688v0.812 3 0.312l0.2812 0.126 1.9998 1 0.719 0.374v-0.812-3-0.312l-0.281-0.126-2.0002-1-0.7188-0.374zm1 1.624l1 0.5v1.876l-1-0.5v-1.876z"
+      />
+      <path
+          id="path9218"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m8.5 17.688v0.812 3 0.312l0.2812 0.126 1.9998 1 0.719 0.374v-0.812-3-0.312l-0.281-0.126-2.0002-1-0.7188-0.374zm1 1.624l1 0.5v1.876l-1-0.5v-1.876z"
+      />
+      <path
+          id="path9220"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m8.5 11.688v0.812 3 0.312l0.2812 0.126 1.9998 1 0.719 0.374v-0.812-3-0.312l-0.281-0.126-2.0002-1-0.7188-0.374zm1 1.624l1 0.5v1.876l-1-0.5v-1.876z"
+      />
+      <path
+          id="path9222"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m3.5 21.188v0.812 3 0.312l0.2812 0.126 2 1 0.7188 0.374v-0.812-3-0.312l-0.2812-0.126-2-1-0.7188-0.374zm1 1.624l1 0.5v1.876l-1-0.5v-1.876z"
+      />
+      <path
+          id="path9224"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m3.5 15.188v0.812 3 0.312l0.2812 0.126 2 1 0.7188 0.374v-0.812-3-0.312l-0.2812-0.126-2-1-0.7188-0.374zm1 1.624l1 0.5v1.876l-1-0.5v-1.876z"
+      />
+      <path
+          id="path9226"
+          style="fill-rule:evenodd;fill:#000000"
+          d="m3.5 9.1875v0.8125 3 0.312l0.2812 0.126 2 1 0.7188 0.374v-0.812-3-0.312l-0.2812-0.126-2-0.9995-0.7188-0.375zm1 1.6245l1 0.5v1.876l-1-0.5v-1.876z"
+      />
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >building 1</dc:title
+        >
+        <dc:date
+          >2006-12-26T00:00:00</dc:date
+        >
+        <dc:description
+        />
+        <dc:source
+          >https://openclipart.org/detail/17394/-by--17394</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >jcartier</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

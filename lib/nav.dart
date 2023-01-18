@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:loginuicolors/find.dart';
+import 'package:loginuicolors/notes.dart';
+import 'package:loginuicolors/pages/homepage.dart';
 import 'package:loginuicolors/privacy_policy.dart';
-import 'package:loginuicolors/send_feedback.dart';
 
 
-import 'dashboard.dart';
+// import 'dashboard.dart';
 import 'home_page.dart';
 import 'events.dart';
 import 'my_drawer_header.dart';
-
-
+import 'find.dart';
+import 'form_two.dart';
+import 'notttes.dart';
 void main() {
   runApp(MyApp());
 }
@@ -35,18 +38,37 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     var container;
     if (currentPage == DrawerSections.dashboard) {
-      container = MapPage();
-    }  else if (currentPage == DrawerSections.events) {
-      container = EventsPage();
-    }   else if (currentPage == DrawerSections.privacy_policy) {
+      container = SearchPage();
+    } else if (currentPage == DrawerSections.events) {
+      container = EventPage();
+    }else if (currentPage == DrawerSections.notes) {
+      container = GotIt();
+    } else if (currentPage == DrawerSections.find) {
+      container = FindPage();
+    } else if (currentPage == DrawerSections.privacy_policy) {
       container = PrivacyPolicyPage();
     } else if (currentPage == DrawerSections.send_feedback) {
-      container = SendFeedbackPage();
+      container = FormTwo();
     }
     return Scaffold(
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Colors.blue[700],
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+        toolbarHeight: 70,
         title: Text("navIST"),
+        centerTitle: true,
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(20),
+                bottomRight: Radius.circular(20)),
+            gradient: LinearGradient(
+                colors: [Colors.indigo, Colors.indigo],
+                begin: Alignment.bottomCenter,
+                end: Alignment.topCenter),
+          ),
+        ),
       ),
       body: container,
       drawer: Drawer(
@@ -74,11 +96,12 @@ class _HomePageState extends State<HomePage> {
         children: [
           menuItem(1, "Home", Icons.dashboard_outlined,
               currentPage == DrawerSections.dashboard ? true : false),
+          menuItem(2, "Find", Icons.location_city,
+              currentPage == DrawerSections.find ? true : false),
           menuItem(3, "Events", Icons.event,
               currentPage == DrawerSections.events ? true : false),
           menuItem(4, "Notes", Icons.notes,
               currentPage == DrawerSections.notes ? true : false),
-
           Divider(),
           menuItem(7, "Privacy policy", Icons.privacy_tip_outlined,
               currentPage == DrawerSections.privacy_policy ? true : false),
@@ -99,15 +122,11 @@ class _HomePageState extends State<HomePage> {
             if (id == 1) {
               currentPage = DrawerSections.dashboard;
             } else if (id == 2) {
-              currentPage = DrawerSections.contacts;
+              currentPage = DrawerSections.find;
             } else if (id == 3) {
               currentPage = DrawerSections.events;
             } else if (id == 4) {
               currentPage = DrawerSections.notes;
-            } else if (id == 5) {
-              currentPage = DrawerSections.settings;
-            } else if (id == 6) {
-              currentPage = DrawerSections.notifications;
             } else if (id == 7) {
               currentPage = DrawerSections.privacy_policy;
             } else if (id == 8) {
@@ -146,11 +165,9 @@ class _HomePageState extends State<HomePage> {
 
 enum DrawerSections {
   dashboard,
-  contacts,
+  find,
   events,
   notes,
-  settings,
-  notifications,
   privacy_policy,
   send_feedback,
 }

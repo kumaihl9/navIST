@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 import 'package:loginuicolors/login.dart';
 import 'package:loginuicolors/register.dart';
 import 'package:loginuicolors/nav.dart';
@@ -8,6 +9,8 @@ const apiKey = 'AIzaSyAYLyHFerbSnftnP7YxXU3zDL5a0CnAsEI';
 const projectId= 'navist-23f7f';
 
 void main() async{
+  await Hive.initFlutter();
+  var box = await Hive.openBox('mybox');
   FirebaseAuth.initialize(apiKey, VolatileStore());
   WidgetsFlutterBinding.ensureInitialized();
   Firestore.initialize(

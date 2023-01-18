@@ -1,4 +1,5 @@
 import folium
+from flask import Flask,render_template,jsonify,request
 
 class Node:
     def __init__ (self, lat, lon, name, info , custom_icon, next = None):
@@ -9,7 +10,7 @@ class Node:
         self.custom_icon = custom_icon
         self.next = next
 
-class LinkedList:
+class LinkedList: 
     def __init__(self):
         self.head = None
 
@@ -863,5 +864,15 @@ raza_block_to_main_football_ground()
 # main_gate_to_main_football_ground()
 # main_gate_to_cafe()
 
+app = Flask(__name__)
+@app.route('/')
+def map():
+    return "OKAKKY"
 
-ist_map.save('map.html')
+@app.route('/map')
+def test():
+    response = jsonify({'some': 'data'})
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+
+app.run(debug=True)
