@@ -3,6 +3,8 @@ import 'package:loginuicolors/directions_model.dart';
 import 'package:loginuicolors/directions_repository.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 
+import 'nav.dart';
+
 
 class MapScreen extends StatefulWidget {
   @override
@@ -30,8 +32,16 @@ class _MapScreenState extends State<MapScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        centerTitle: false,
-        title: const Text('Google Maps'),
+        leading: new IconButton(
+          icon: new Icon(Icons.arrow_back_ios, color: Colors.grey),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => HomePage()),
+            );
+          },
+        ),
+        backgroundColor: Colors.indigo,
         actions: [
           if (_origin != null)
             TextButton(
@@ -45,10 +55,10 @@ class _MapScreenState extends State<MapScreen> {
                 ),
               ),
               style: TextButton.styleFrom(
-                foregroundColor: Colors.green,
+                foregroundColor: Colors.white,
                 textStyle: const TextStyle(fontWeight: FontWeight.w600),
               ),
-              child: const Text('ORIGIN'),
+              child: const Text('Origin'),
             ),
           if (_destination != null)
             TextButton(
@@ -62,10 +72,10 @@ class _MapScreenState extends State<MapScreen> {
                 ),
               ),
               style: TextButton.styleFrom(
-                foregroundColor: Colors.blue,
+                foregroundColor: Colors.white,
                 textStyle: const TextStyle(fontWeight: FontWeight.w600),
               ),
-              child: const Text('DEST'),
+              child: const Text('Destination'),
             )
         ],
       ),
@@ -125,7 +135,7 @@ class _MapScreenState extends State<MapScreen> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Theme.of(context).primaryColor,
+        backgroundColor: Colors.indigo,
         foregroundColor: Colors.black,
         onPressed: () => _googleMapController?.animateCamera(
           _info != null

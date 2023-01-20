@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:loginuicolors/main.dart';
-import 'package:loginuicolors/show.dart';
 
 void main() {
   runApp(const MyApp());
@@ -90,10 +89,9 @@ class _RoomPageState extends State<RoomPage> {
               child: MaterialButton(
                 onPressed: () async {
                   final response =
-                      await http.get(Uri.parse("$URL/findroom?room_no=${Find}"));
+                      await http.get(Uri.parse("$URL/findroom?room_no=$Find"));
                   final decode = json.decode(response.body);
                   setState(() {
-                    _getdata();
                     roomFind = decode["result"];
                   });
                 },
@@ -113,8 +111,8 @@ class _RoomPageState extends State<RoomPage> {
             Container(
               child: Center(
                 child: Text(
-                  roomFind,
-                  style: TextStyle(fontSize: 30),
+                  '$roomFind',
+                  style: TextStyle(fontSize: 20),
                 ),
               ),
             ),
