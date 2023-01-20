@@ -8,6 +8,7 @@ import 'package:loginuicolors/privacy_policy.dart';
 // import 'dashboard.dart';
 import 'home_page.dart';
 import 'events.dart';
+import 'map.dart';
 import 'my_drawer_header.dart';
 import 'find.dart';
 import 'form_two.dart';
@@ -38,7 +39,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     var container;
     if (currentPage == DrawerSections.dashboard) {
-      container = SearchPage();
+      container = MapScreen();
     } else if (currentPage == DrawerSections.events) {
       container = EventPage();
     }else if (currentPage == DrawerSections.notes) {
