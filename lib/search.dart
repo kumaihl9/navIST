@@ -1,4 +1,8 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:loginuicolors/main.dart';
 
 void main() {
   runApp(const MyApp());
@@ -27,6 +31,15 @@ class _RoomPageState extends State<RoomPage> {
   void updateList(String value) {
     // function that will filter our list
   }
+  String roomFind = '';
+  String Find = '';
+  String userPost = '';
+
+  final _textController = TextEditingController();
+  _getdata() async {
+    final response = await http.get(Uri.parse("$URL/findroom"));
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,7 +66,13 @@ class _RoomPageState extends State<RoomPage> {
               height: 20.0,
             ),
             TextField(
-              style: TextStyle(color: Colors.white),
+              onChanged: (text) {
+                setState(() {
+                  Find = text;
+                });
+              },
+              controller: _textController,
+              style: TextStyle(color: Colors.black54),
               decoration: InputDecoration(
                   filled: true,
                   fillColor: Color.fromARGB(255, 146, 197, 239),
@@ -65,6 +84,24 @@ class _RoomPageState extends State<RoomPage> {
                   prefixIcon: Icon(Icons.search),
                   prefixIconColor: Colors.grey),
             ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: MaterialButton(
+                onPressed: () async {
+                  final response =
+                      await http.get(Uri.parse("$URL/findroom?room_no=$Find"));
+                  final decode = json.decode(response.body);
+                  setState(() {
+                    roomFind = decode["result"];
+                  });
+                },
+                color: Color.fromARGB(255, 146, 197, 239),
+                child: Text(
+                  "Search",
+                  style: TextStyle(color: Colors.black54),
+                ),
+              ),
+            ),
             SizedBox(
               height: 20.0,
             ),
@@ -72,13 +109,24 @@ class _RoomPageState extends State<RoomPage> {
               child: ListView(),
             ),
             Container(
-              width: double.maxFinite,
-              height: 230.0,
-              child: Container(),
-              decoration: BoxDecoration(
-                  image: DecorationImage(
-                      image: AssetImage("assets/images/search.png"),
-                      fit: BoxFit.cover)),
+              child: Center(
+                child: Text(
+                  '$roomFind',
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Container(
+                width: double.maxFinite,
+                height: 230.0,
+                child: Container(),
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/images/search.png"),
+                        fit: BoxFit.cover)),
+              ),
             )
           ],
         ),

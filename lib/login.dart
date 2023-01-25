@@ -25,10 +25,9 @@ class _MyLoginState extends State<MyLogin> {
       await FirebaseAuth.instance.signIn(_email!, _password!);
       var user = await FirebaseAuth.instance.getUser();
       if (user.email!.isNotEmpty) {
-          print("pass");
+        print("pass");
         Navigator.pushNamed(context, 'home');
-      }
-      else{
+      } else {
         setState(() {
           _error = "Could not login";
           print("error");
@@ -55,7 +54,6 @@ class _MyLoginState extends State<MyLogin> {
         image: DecorationImage(
             image: AssetImage('assets/login.png'), fit: BoxFit.cover),
       ),
-
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Stack(
@@ -76,9 +74,17 @@ class _MyLoginState extends State<MyLogin> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    _error.isNotEmpty? Center(child: Text(_error,style: TextStyle(color: Colors.red),),):Container(),
-                    SizedBox(height: 20,),
-                  
+                    _error.isNotEmpty
+                        ? Center(
+                            child: Text(
+                              _error,
+                              style: TextStyle(color: Colors.red),
+                            ),
+                          )
+                        : Container(),
+                    SizedBox(
+                      height: 20,
+                    ),
                     Container(
                       margin: const EdgeInsets.only(left: 35, right: 35),
                       child: Form(

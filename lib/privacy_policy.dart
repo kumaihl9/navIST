@@ -74,7 +74,7 @@ class _PrivacyPolicyPageState extends State<PrivacyPolicyPage> {
           ),
           SizedBox(height: 40.0),
           Container(
-            height: MediaQuery.of(context).size.height - 185.0,
+            height: MediaQuery.of(context).size.height,
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.only(topLeft: Radius.circular(75.0)),
@@ -89,18 +89,18 @@ class _PrivacyPolicyPageState extends State<PrivacyPolicyPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.all(10.0),
-                      child: Container(
-                        child: Text('This app respects and protects user privacy. To Provide you with more accurate and personalized services, this app shall use and disclose your information in accordance with this privacy policy. For details Contact us on our given email.'
-                        ,style: TextStyle(fontSize: 23,fontFamily: 'Montserrat Regular'),),
-                        height: 335.0,
-                        width: 330.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10.0),
+                        Container(
+                          child: Text('This app respects and protects user privacy. To Provide '
+                              'you with more accurate and personalized services, this app shall'
+                              ' use and disclose your information in accordance with this privacy'
+                              ' policy. For details Contact us on our given email.'
+                          ,style: TextStyle(fontSize: 21,height: 1.5,fontFamily: 'Montserrat Regular'),),
+                          height: 320.0,
+                          width: 280.0,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
                         ),
-                      ),
-                    ),
                   ],
                 )
               ],
