@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firedart/firedart.dart';
+import 'map.dart';
 
 class MyLogin extends StatefulWidget {
   const MyLogin({Key? key}) : super(key: key);
@@ -187,20 +188,6 @@ class _MyLoginState extends State<MyLogin> {
                                         fontSize: 18),
                                   ),
                                 ),
-
-                                TextButton(
-                                  onPressed: () {
-                                    Navigator.pushNamed(context, 'register');
-                                  },
-                                  style: const ButtonStyle(),
-                                  child: const Text(
-                                    'Forgot Password',
-                                    style: TextStyle(
-                                        decoration: TextDecoration.underline,
-                                        color: Color(0xff4c505b),
-                                        fontSize: 18),
-                                  ),
-                                ),
                               ],
                             ),
                             const SizedBox(
@@ -210,7 +197,14 @@ class _MyLoginState extends State<MyLogin> {
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 TextButton.icon(
-                                  onPressed: () {},
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: (context) => MapScreen()),
+                                    );
+                                  },
+                                  
                                   icon: Icon(
                                     Icons.account_box,
                                     size: 17,
@@ -218,7 +212,7 @@ class _MyLoginState extends State<MyLogin> {
                                   label: Text('Guest Mode'),
                                 ),
                               ],
-                            )
+                            ) 
                           ],
                         ),
                       ),
