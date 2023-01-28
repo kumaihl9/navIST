@@ -4,14 +4,14 @@ import '../data/database.dart';
 import '../util/dialog_box.dart';
 import '../util/todo_tile.dart';
 
-class HoePage extends StatefulWidget {
-  const HoePage({key});
+class HomePage2 extends StatefulWidget {
+  const HomePage2({key});
 
   @override
-  State<HoePage> createState() => _HoePageState();
+  State<HomePage2> createState() => _HomePage2State();
 }
 
-class _HoePageState extends State<HoePage> {
+class _HomePage2State extends State<HomePage2> {
   // reference the hive box
   final _myBox = Hive.box('mybox');
   ToDoDataBase db = ToDoDataBase();
@@ -47,6 +47,10 @@ class _HoePageState extends State<HoePage> {
       _controller.clear();
     });
     Navigator.of(context).pop();
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => HomePage2()),
+    );
     db.updateDataBase();
   }
 
@@ -58,7 +62,7 @@ class _HoePageState extends State<HoePage> {
         return DialogBox(
           controller: _controller,
           onSave: saveNewTask,
-          onCancel: () => Navigator.of(context).pop(),
+          onCancel: () => Navigator.pop(context),
         );
       },
     );

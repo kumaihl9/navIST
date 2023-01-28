@@ -4,7 +4,7 @@ import 'package:loginuicolors/login.dart';
 import 'package:loginuicolors/register.dart';
 import 'package:loginuicolors/nav.dart';
 import 'package:firedart/firedart.dart';
-const URL = 'http://192.168.18.241:5000';
+const URL = 'http://172.20.10.4:5000';
 const apiKey = 'AIzaSyAYLyHFerbSnftnP7YxXU3zDL5a0CnAsEI';
 const projectId= 'navist-23f7f';
 

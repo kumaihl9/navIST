@@ -12,7 +12,7 @@ class GotIt extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HoePage(),
+      home: HomePage2(),
       theme: ThemeData(primarySwatch: Colors.blue),
     );
   }

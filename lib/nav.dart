@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                 bottomLeft: Radius.circular(20),
                 bottomRight: Radius.circular(20)),
             gradient: LinearGradient(
-                colors: [Colors.indigo, Colors.indigo],
+                colors: [Color.fromARGB(255, 181, 63, 93), Colors.indigo],
                 begin: Alignment.bottomCenter,
                 end: Alignment.topCenter),
           ),

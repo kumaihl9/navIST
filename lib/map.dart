@@ -32,6 +32,7 @@ class _MapScreenState extends State<MapScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title:  const Text('Tap and hold to select location and destination',style: TextStyle(color: Colors.white,fontSize: 14),),
         leading: new IconButton(
           icon: new Icon(Icons.arrow_back_ios, color: Colors.grey),
           onPressed: () {
@@ -41,7 +42,7 @@ class _MapScreenState extends State<MapScreen> {
             );
           },
         ),
-        backgroundColor: Colors.indigo,
+        backgroundColor: Color.fromARGB(255, 181, 63, 69),
         actions: [
           if (_origin != null)
             TextButton(
@@ -135,7 +136,7 @@ class _MapScreenState extends State<MapScreen> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        backgroundColor: Colors.indigo,
+        backgroundColor: Color.fromARGB(255, 181, 63, 63),
         foregroundColor: Colors.black,
         onPressed: () => _googleMapController?.animateCamera(
           _info != null
