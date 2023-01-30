@@ -71,7 +71,7 @@ class _FindPageState extends State<FindPage> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              SvgPicture.network(
+                              SvgPicture.asset(
                                 'assets/iso_city_tower_02.svg',
                                 height: 108,
                               ),
@@ -97,7 +97,7 @@ class _FindPageState extends State<FindPage> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              SvgPicture.network(
+                              SvgPicture.asset(
                                 'assets/iso_city_tower_02.svg',
                                 height: 108,
                               ),
@@ -123,7 +123,7 @@ class _FindPageState extends State<FindPage> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              SvgPicture.network(
+                              SvgPicture.asset(
                                 'assets/iso_city_tower_02.svg',
                                 height: 108,
                               ),
@@ -149,7 +149,7 @@ class _FindPageState extends State<FindPage> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              SvgPicture.network(
+                              SvgPicture.asset(
                                 'assets/iso_city_tower_02.svg',
                                 height: 108,
                               ),
@@ -175,7 +175,7 @@ class _FindPageState extends State<FindPage> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              SvgPicture.network(
+                              SvgPicture.asset(
                                 'assets/iso_city_tower_02.svg',
                                 height: 108,
                               ),
@@ -201,7 +201,7 @@ class _FindPageState extends State<FindPage> {
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: <Widget>[
-                              SvgPicture.network(
+                              SvgPicture.asset(
                                 'assets/iso_city_tower_02.svg',
                                 height: 108,
                               ),

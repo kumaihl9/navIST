@@ -44,7 +44,7 @@ dependencies:
   dio: ^4.0.6
   flutter_polyline_points: ^1.0.0
   google_maps_flutter: ^2.2.3
-
+  maps_toolkit: ^2.0.1
 
 
 dev_dependencies:
@@ -68,6 +68,12 @@ flutter:
     - assets/images/yoyo.png
     - assets/images/feedback.png
     - assets/images/search.png
+    - assets/images/block12.png
+    - assets/images/block7.png
+    - assets/images/block2.png
+    - assets/images/raza_block.png
+    - assets/images/block3.png
+    - assets/images/mess.png
 
     #   - images/a_dot_ham.jpeg
 

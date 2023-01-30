@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4a6322f8136159e88099c9f2fc1498b1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4a6322f8136159e88099c9f2fc1498b1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4a6322f8136159e88099c9f2fc1498b1 = L.map(
+                "map_4a6322f8136159e88099c9f2fc1498b1",
+                {
+                    center: [33.521, 73.17475],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 17,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0d6c1b313d533ca333ddfe1621e6aea2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var marker_be4adb5f8bdb033ce241402eaa4a29c6 = L.marker(
+                [33.51902184214801, 73.17666419935208],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_cdd408b5af08bbde9c11353aab25746f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cc", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_be4adb5f8bdb033ce241402eaa4a29c6.setIcon(icon_cdd408b5af08bbde9c11353aab25746f);
+        
+    
+        var popup_1f85f83c846ec2561c6031df4f33fc34 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7385566ec42898c1d4a4ed96da28a9c5 = $(`<div id="html_7385566ec42898c1d4a4ed96da28a9c5" style="width: 100.0%; height: 100.0%;"><strong>ATM for Cash Transactions</strong></div>`)[0];
+                popup_1f85f83c846ec2561c6031df4f33fc34.setContent(html_7385566ec42898c1d4a4ed96da28a9c5);
+            
+        
+
+        marker_be4adb5f8bdb033ce241402eaa4a29c6.bindPopup(popup_1f85f83c846ec2561c6031df4f33fc34)
+        ;
+
+        
+    
+    
+            marker_be4adb5f8bdb033ce241402eaa4a29c6.bindTooltip(
+                `<div>
+                     <strong>HBL ATM</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e0370fb3293a73eb09ab1929f59118a = L.marker(
+                [33.52032335901399, 73.17753167209483],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_bceaf4a9614e96b5b277bc9cb297cf49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bus", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7e0370fb3293a73eb09ab1929f59118a.setIcon(icon_bceaf4a9614e96b5b277bc9cb297cf49);
+        
+    
+        var popup_192d1211d0f4fc9679d5524562272519 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0b04b7f28358004a9d6372421205791 = $(`<div id="html_b0b04b7f28358004a9d6372421205791" style="width: 100.0%; height: 100.0%;"><strong>IST Transport</strong></div>`)[0];
+                popup_192d1211d0f4fc9679d5524562272519.setContent(html_b0b04b7f28358004a9d6372421205791);
+            
+        
+
+        marker_7e0370fb3293a73eb09ab1929f59118a.bindPopup(popup_192d1211d0f4fc9679d5524562272519)
+        ;
+
+        
+    
+    
+            marker_7e0370fb3293a73eb09ab1929f59118a.bindTooltip(
+                `<div>
+                     <strong>Parking Area</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a524a8f993a8be9fe8c4abb72486b14 = L.marker(
+                [33.520280898072734, 73.17426044599881],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_f7e73c2f2bc77f8d9827ba2f71aa078a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3a524a8f993a8be9fe8c4abb72486b14.setIcon(icon_f7e73c2f2bc77f8d9827ba2f71aa078a);
+        
+    
+        var popup_1388cc2c9ab608caa587011a849b7987 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e38dfd220a690a3143c5a5a12c9509ed = $(`<div id="html_e38dfd220a690a3143c5a5a12c9509ed" style="width: 100.0%; height: 100.0%;"><strong>Living Area for Faculty</strong></div>`)[0];
+                popup_1388cc2c9ab608caa587011a849b7987.setContent(html_e38dfd220a690a3143c5a5a12c9509ed);
+            
+        
+
+        marker_3a524a8f993a8be9fe8c4abb72486b14.bindPopup(popup_1388cc2c9ab608caa587011a849b7987)
+        ;
+
+        
+    
+    
+            marker_3a524a8f993a8be9fe8c4abb72486b14.bindTooltip(
+                `<div>
+                     <strong>Faculty Hostels</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_98eec0ec15e3dc589de37ee481870198 = L.marker(
+                [33.52137430841904, 73.17310797566412],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_75f1621febaef0bfd79fdfa2d12edb7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "futbol-o", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_98eec0ec15e3dc589de37ee481870198.setIcon(icon_75f1621febaef0bfd79fdfa2d12edb7a);
+        
+    
+        var popup_840433c7a6e05ffd883cb71d0e7af6b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a713521595f20038190e0040566b0050 = $(`<div id="html_a713521595f20038190e0040566b0050" style="width: 100.0%; height: 100.0%;"><strong>IST Khatana Stadium</strong></div>`)[0];
+                popup_840433c7a6e05ffd883cb71d0e7af6b3.setContent(html_a713521595f20038190e0040566b0050);
+            
+        
+
+        marker_98eec0ec15e3dc589de37ee481870198.bindPopup(popup_840433c7a6e05ffd883cb71d0e7af6b3)
+        ;
+
+        
+    
+    
+            marker_98eec0ec15e3dc589de37ee481870198.bindTooltip(
+                `<div>
+                     <strong>Main Football and Cricket Ground</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e676798a68b3467e776dcf984f6a6658 = L.marker(
+                [33.51971273174142, 73.17410855690811],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_9487e33fa9e57b56d57cc4ba7c80ed91 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "futbol-o", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_e676798a68b3467e776dcf984f6a6658.setIcon(icon_9487e33fa9e57b56d57cc4ba7c80ed91);
+        
+    
+        var popup_aeccd40e934b0357581b31a536e16b2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d8e17b31b00af383b63d510a635325d = $(`<div id="html_7d8e17b31b00af383b63d510a635325d" style="width: 100.0%; height: 100.0%;"><strong>Basketball /Futsal /Volleyball /Tennis Court</strong></div>`)[0];
+                popup_aeccd40e934b0357581b31a536e16b2c.setContent(html_7d8e17b31b00af383b63d510a635325d);
+            
+        
+
+        marker_e676798a68b3467e776dcf984f6a6658.bindPopup(popup_aeccd40e934b0357581b31a536e16b2c)
+        ;
+
+        
+    
+    
+            marker_e676798a68b3467e776dcf984f6a6658.bindTooltip(
+                `<div>
+                     <strong>Sports Grounds</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a570431de42b46ff25701c2f55f127f3 = L.marker(
+                [33.521110473487404, 73.17454369121226],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_eef84271f7c504a0527c58301133e9dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "book", "iconColor": "white", "markerColor": "pink", "prefix": "fa"}
+            );
+            marker_a570431de42b46ff25701c2f55f127f3.setIcon(icon_eef84271f7c504a0527c58301133e9dc);
+        
+    
+        var popup_2ec0d2f22a4d824b6a45e2599c8eb87d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b96ce5828b10b28ee49c575fad962f87 = $(`<div id="html_b96ce5828b10b28ee49c575fad962f87" style="width: 100.0%; height: 100.0%;"><strong>Newly constructed IST Library</strong></div>`)[0];
+                popup_2ec0d2f22a4d824b6a45e2599c8eb87d.setContent(html_b96ce5828b10b28ee49c575fad962f87);
+            
+        
+
+        marker_a570431de42b46ff25701c2f55f127f3.bindPopup(popup_2ec0d2f22a4d824b6a45e2599c8eb87d)
+        ;
+
+        
+    
+    
+            marker_a570431de42b46ff25701c2f55f127f3.bindTooltip(
+                `<div>
+                     <strong>Library</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_587e463771b8c28008c516fb5413fe6c = L.marker(
+                [33.52109307542843, 73.17422141254667],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_a02a02f45ab6dfae28d604c08552110f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_587e463771b8c28008c516fb5413fe6c.setIcon(icon_a02a02f45ab6dfae28d604c08552110f);
+        
+    
+        var popup_a3f8fdae58bda2dccda29700ae2f3e10 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb5c356bafafe355312a3705fc318919 = $(`<div id="html_eb5c356bafafe355312a3705fc318919" style="width: 100.0%; height: 100.0%;"><strong>Fast Food, Desi Food and Snacks available at Mess.</strong></div>`)[0];
+                popup_a3f8fdae58bda2dccda29700ae2f3e10.setContent(html_eb5c356bafafe355312a3705fc318919);
+            
+        
+
+        marker_587e463771b8c28008c516fb5413fe6c.bindPopup(popup_a3f8fdae58bda2dccda29700ae2f3e10)
+        ;
+
+        
+    
+    
+            marker_587e463771b8c28008c516fb5413fe6c.bindTooltip(
+                `<div>
+                     <strong>IST Mess</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f31c80b50680d92ebf5fa79b6f3034a0 = L.marker(
+                [33.52081325293482, 73.17597404567823],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_7cb04d1e1c5c1ea5ae53f644c13560b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f31c80b50680d92ebf5fa79b6f3034a0.setIcon(icon_7cb04d1e1c5c1ea5ae53f644c13560b9);
+        
+    
+        var popup_9bd445596bca44daaefc3afffec83cad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3011c3ffae31be74805006ab6c686beb = $(`<div id="html_3011c3ffae31be74805006ab6c686beb" style="width: 100.0%; height: 100.0%;"><strong>Baig Transport Office</strong></div>`)[0];
+                popup_9bd445596bca44daaefc3afffec83cad.setContent(html_3011c3ffae31be74805006ab6c686beb);
+            
+        
+
+        marker_f31c80b50680d92ebf5fa79b6f3034a0.bindPopup(popup_9bd445596bca44daaefc3afffec83cad)
+        ;
+
+        
+    
+    
+            marker_f31c80b50680d92ebf5fa79b6f3034a0.bindTooltip(
+                `<div>
+                     <strong>Book Shop and Cafe</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47f711a42b80c39c808f133e144ace7f = L.marker(
+                [33.5225547498522, 73.1771102286226],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_e62b41f974cdb0624e3f632539c53156 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_47f711a42b80c39c808f133e144ace7f.setIcon(icon_e62b41f974cdb0624e3f632539c53156);
+        
+    
+        var popup_0f983d81138258c1574a0b142c9ce79d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1daa91835ae5976f4f62933ec0d33dd = $(`<div id="html_e1daa91835ae5976f4f62933ec0d33dd" style="width: 100.0%; height: 100.0%;"><strong>Materials/ATH/Mechanical Dept.</strong></div>`)[0];
+                popup_0f983d81138258c1574a0b142c9ce79d.setContent(html_e1daa91835ae5976f4f62933ec0d33dd);
+            
+        
+
+        marker_47f711a42b80c39c808f133e144ace7f.bindPopup(popup_0f983d81138258c1574a0b142c9ce79d)
+        ;
+
+        
+    
+    
+            marker_47f711a42b80c39c808f133e144ace7f.bindTooltip(
+                `<div>
+                     <strong>Block VII</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8aeca07fc86634d90ae360cfee222389 = L.marker(
+                [33.52042231579276, 73.17558554369599],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_69b3f29183603e5ab8186243c4fa03bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "coffee", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8aeca07fc86634d90ae360cfee222389.setIcon(icon_69b3f29183603e5ab8186243c4fa03bb);
+        
+    
+        var popup_4efb5fc49192911fd705c4798428810e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a5c890a41bf27463576bfa59d662148 = $(`<div id="html_7a5c890a41bf27463576bfa59d662148" style="width: 100.0%; height: 100.0%;"><strong>Refreshments and basic necessities</strong></div>`)[0];
+                popup_4efb5fc49192911fd705c4798428810e.setContent(html_7a5c890a41bf27463576bfa59d662148);
+            
+        
+
+        marker_8aeca07fc86634d90ae360cfee222389.bindPopup(popup_4efb5fc49192911fd705c4798428810e)
+        ;
+
+        
+    
+    
+            marker_8aeca07fc86634d90ae360cfee222389.bindTooltip(
+                `<div>
+                     <strong>Tuck Shop</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af3ca8178a3303d435317b96c5c8778a = L.marker(
+                [33.519872226498855, 73.17495790677846],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_31580ab17c559fc274c3292d488c1863 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_af3ca8178a3303d435317b96c5c8778a.setIcon(icon_31580ab17c559fc274c3292d488c1863);
+        
+    
+        var popup_6b4551f35c730f65a49a0e2bccdb4fa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_06267f07ecc1eb002fab683ff315624f = $(`<div id="html_06267f07ecc1eb002fab683ff315624f" style="width: 100.0%; height: 100.0%;"><strong>Faculty Offices/Finance Offices</strong></div>`)[0];
+                popup_6b4551f35c730f65a49a0e2bccdb4fa3.setContent(html_06267f07ecc1eb002fab683ff315624f);
+            
+        
+
+        marker_af3ca8178a3303d435317b96c5c8778a.bindPopup(popup_6b4551f35c730f65a49a0e2bccdb4fa3)
+        ;
+
+        
+    
+    
+            marker_af3ca8178a3303d435317b96c5c8778a.bindTooltip(
+                `<div>
+                     <strong>Block II</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43288c5ced66ed50eafd5e2e30dbc28b = L.marker(
+                [33.519878934925885, 73.17474869448513],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_28dd5960ce7cbb7e2610beccd922fba9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "gamepad", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_43288c5ced66ed50eafd5e2e30dbc28b.setIcon(icon_28dd5960ce7cbb7e2610beccd922fba9);
+        
+    
+        var popup_4d1c052cb56b879c68769b8b5ceee6f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9f4a9818630dd4dc9a163b7f7d14f65 = $(`<div id="html_f9f4a9818630dd4dc9a163b7f7d14f65" style="width: 100.0%; height: 100.0%;"><strong>Snooker/Table Tennis/Foosball/Chess/Carom</strong></div>`)[0];
+                popup_4d1c052cb56b879c68769b8b5ceee6f4.setContent(html_f9f4a9818630dd4dc9a163b7f7d14f65);
+            
+        
+
+        marker_43288c5ced66ed50eafd5e2e30dbc28b.bindPopup(popup_4d1c052cb56b879c68769b8b5ceee6f4)
+        ;
+
+        
+    
+    
+            marker_43288c5ced66ed50eafd5e2e30dbc28b.bindTooltip(
+                `<div>
+                     <strong>Gaming Room</strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ea265b5d841df3bda6228ee31215540 = L.marker(
+                [33.519134439161945, 73.17685322030297],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_7bc7f0d0cf7e82a4759b3de08f523a9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7ea265b5d841df3bda6228ee31215540.setIcon(icon_7bc7f0d0cf7e82a4759b3de08f523a9b);
+        
+    
+        var popup_b609704caa453ae1b6acc7f06241ae35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_24b37f87dd23ff4a403ecb417567efc6 = $(`<div id="html_24b37f87dd23ff4a403ecb417567efc6" style="width: 100.0%; height: 100.0%;"><strong>ATM and Main Entrance Gate for IST</strong></div>`)[0];
+                popup_b609704caa453ae1b6acc7f06241ae35.setContent(html_24b37f87dd23ff4a403ecb417567efc6);
+            
+        
+
+        marker_7ea265b5d841df3bda6228ee31215540.bindPopup(popup_b609704caa453ae1b6acc7f06241ae35)
+        ;
+
+        
+    
+    
+            marker_7ea265b5d841df3bda6228ee31215540.bindTooltip(
+                `<div>
+                     <strong>Main Gate </strong>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26712e57816e40636fddf97be2da8c5e = L.marker(
+                [33.52082538765659, 73.17655744734651],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_bdaea8c90630b0f872f6608ea55be5ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_26712e57816e40636fddf97be2da8c5e.setIcon(icon_bdaea8c90630b0f872f6608ea55be5ea);
+        
+    
+        var popup_36998b68805c9c8f0118eb55c45ec718 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17b339e5e3734343f33427792473d881 = $(`<div id="html_17b339e5e3734343f33427792473d881" style="width: 100.0%; height: 100.0%;"><strong>Badminton Court/EE/Avionics/Aero/CS Dept.</strong></div>`)[0];
+                popup_36998b68805c9c8f0118eb55c45ec718.setContent(html_17b339e5e3734343f33427792473d881);
+            
+        
+
+        marker_26712e57816e40636fddf97be2da8c5e.bindPopup(popup_36998b68805c9c8f0118eb55c45ec718)
+        ;
+
+        
+    
+    
+            marker_26712e57816e40636fddf97be2da8c5e.bindTooltip(
+                `<div>
+                     Block VI
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_780b40f08ba7274c448aef0c0e2e6ac2 = L.marker(
+                [33.51937413501072, 73.17465307891048],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+        var popup_44877ac9c4d48ae0d026915eb3965776 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4612f1658e8f6e1f8aa81d3297535f26 = $(`<div id="html_4612f1658e8f6e1f8aa81d3297535f26" style="width: 100.0%; height: 100.0%;"><strong>Prayer area for gents</strong></div>`)[0];
+                popup_44877ac9c4d48ae0d026915eb3965776.setContent(html_4612f1658e8f6e1f8aa81d3297535f26);
+            
+        
+
+        marker_780b40f08ba7274c448aef0c0e2e6ac2.bindPopup(popup_44877ac9c4d48ae0d026915eb3965776)
+        ;
+
+        
+    
+    
+            marker_780b40f08ba7274c448aef0c0e2e6ac2.bindTooltip(
+                `<div>
+                     Mosque
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40025af6436b44b39d774d9cd0ee44d1 = L.marker(
+                [33.519832751777635, 73.17594034137406],
+                {}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+    
+            var icon_ff8304b854dde6082d2354adde84c702 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "building", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_40025af6436b44b39d774d9cd0ee44d1.setIcon(icon_ff8304b854dde6082d2354adde84c702);
+        
+    
+        var popup_ff201ceb4bbbe32e9c5821006f07c03d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_69a7c5270188d751d7568f26716c6d22 = $(`<div id="html_69a7c5270188d751d7568f26716c6d22" style="width: 100.0%; height: 100.0%;"><strong>Main Block/VC and Dean Office</strong></div>`)[0];
+                popup_ff201ceb4bbbe32e9c5821006f07c03d.setContent(html_69a7c5270188d751d7568f26716c6d22);
+            
+        
+
+        marker_40025af6436b44b39d774d9cd0ee44d1.bindPopup(popup_ff201ceb4bbbe32e9c5821006f07c03d)
+        ;
+
+        
+    
+    
+            marker_40025af6436b44b39d774d9cd0ee44d1.bindTooltip(
+                `<div>
+                     Raza
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_bc1fafd17172590195ed0ed92df32176 = L.polyline(
+                [[33.519134439161945, 73.17685322030297], [33.52050175542909, 73.17695742388551], [33.52061249930574, 73.17428928189915], [33.52039285144894, 73.17425151571027]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+            ).addTo(map_4a6322f8136159e88099c9f2fc1498b1);
+        
+</script>
+</html>
